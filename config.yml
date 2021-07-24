@@ -1,0 +1,93 @@
+baseURL: "https://sidntrivedi012.netlify.app"
+title: Siddhant N Trivedi
+theme: PaperMod
+enableEmoji: true
+
+params:
+    defaultTheme: auto # dark, light
+
+    ShowReadingTime: true
+    # ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: false
+    tocopen: false
+
+    # home-info mode
+    homeInfoParams:
+        Title: "Hi, I am Siddhant \U0001F44B"
+        Content: Software Developer & Open-Source Contributor
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/sidntrivedi012"
+        - name: github
+          url: "https://github.com/sidntrivedi012"
+        - name: linkedin
+          url: "https://linkedin.com/in/siddhantntrivedi"
+        - name: email
+          url: "mailto:sidntrivedi012@gmail.com"
+        - name: rss
+          url: "https://sidntrivedi012.netlify.app/index.xml"
+
+    # editPost:
+    #     URL: "https://github.com/sidntrivedi012/blog/content"
+    #     Text: "Suggest Changes" # edit text
+    #     appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: about
+          name: about
+          url: /about/
+          weight: 10
+
+        - identifier: writing
+          name: writing
+          url: /blog/
+          weight: 20
+
+        - identifier: reading
+          name: reading
+          url: /reading/
+          weight: 30
+
+        - identifier: archives
+          name: archives
+          url: /archives/
+          weight: 40
+        # - identifier: categories
+        #   name: categories
+        #   url: /categories/
+        #   weight: 30
+
+        # - identifier: tags
+        #   name: tags
+        #   url: /tags/
+        #   weight: 40
+
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: false
+        # style: solarized-dark
